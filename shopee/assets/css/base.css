@@ -21,7 +21,10 @@ html {
     box-sizing: border-box;
     line-height: 1.6rem;
     font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
+    font-family: Helvetica Neue,Helvetica,Arial,
+    文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,
+    LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei 
+    UI,Microsoft JhengHei,sans-serif;
 }
 
 a {
