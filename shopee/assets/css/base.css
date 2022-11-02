@@ -56,6 +56,99 @@ li {
     }
 }
 
+/* btn */
+.btn {
+    min-width: 124px;
+    padding: 0 24px;
+    height: 34px;
+    font-size: 1.5rem;
+    border: none;
+    line-height: 34px;
+    background-color: var(--white-color);
+}
+
+.btn--normal {
+    margin-left: 8px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.btn--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn--disabled {
+    cursor: default;
+    color: #949494;
+    background-color: #c3c3c3;
+}
+
+/* select options */
+.select-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    position: relative;
+    background-color: var(--white-color);
+    cursor: pointer;
+}
+
+.select-input::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 21px;
+    left: 0px;
+}
+
+.select-input:hover .select__input-list {
+    display: block;
+}
+
+.select-input__label {
+    font-size: 1.4rem;
+    color: #555;
+}
+
+.select-input__icon {
+    font-size: 1.4rem;
+    width: 12px;
+    fill: #555;
+    position: relative;
+}
+
+.select__input-list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35px;
+    border-radius: 2px;
+    padding: 10px 0;
+    max-height: 270px;
+    background-color: var(--white-color);
+    display: none;
+    animation: fadeIn linear 0.1s;
+    box-shadow: 0 0.3125rem 0.625rem 0 rgb(0 0 0 / 5%);
+    z-index: 2;
+}
+
+.select__input-link {
+    display: block;
+    padding: 8px 12px 8px 15px;
+    color: var(--text-color);
+    font-size: 1.4rem;
+}
+
+.select__input-link:hover {
+    color: var(--primary-color);
+}
+
 /* modal */
 .modal {
     position: fixed;
