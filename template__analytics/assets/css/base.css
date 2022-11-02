@@ -1,0 +1,28 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --red-color:#e50914;
+    --gray-color:#ccc;
+    --blue-color:#2196F3;
+    --green-color: #009688;
+    --yellow-color:#ff9800;
+}
+
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: "Raleway", sans-serif;
+    scroll-behavior: smooth;
+}
+
+a,
+ul li a {
+    text-decoration: none;
+}

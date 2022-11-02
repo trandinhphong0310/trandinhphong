@@ -1,0 +1,264 @@
+.header {
+    background-color: var(--white-color);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    right:0;
+    left:0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.header__container {
+    height: 55px;
+}
+
+.header__container-header {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.header__container-header a {
+    line-height: 55px;
+    padding: 8px 16px;
+    color: var(--black-color);
+    letter-spacing: 0.4rem;
+}
+
+.header__container-list {
+    float: right;
+}
+
+.header__container-list > li {
+    display: inline-block;
+    line-height: 55px;
+}
+
+.header__container-list li a {
+    font-size: 1.5rem;
+    color: var(--black-color);
+    padding: 10px 25px;
+    letter-spacing: 0.4rem;
+}
+
+.header__container-link:hover {
+    background-color: var(--gray-color);
+}
+
+/* slider */
+
+.slider {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1600px;
+    min-width: 500px;
+}
+
+.slider__container-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.slider__container-text {
+    height: 5rem;
+    line-height: 5rem;
+    position: absolute;
+    font-size: 3.4rem;
+    letter-spacing: 0.5rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    left: 2.4rem;
+    bottom: 0;
+    font-weight: 400;
+}
+
+/* content */
+.content__container {
+    padding: 64px 0;
+    border-bottom: 1px solid var(--gray-color);
+}
+
+/* About Catering */
+.content__container-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content__container-img,
+.content__container-text {
+    padding: 1.2rem 1.2rem;
+}
+
+.content__container-title {
+    font-size: 3.6rem;
+    text-align: center;
+}
+
+.content__container-sub-title {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.content__container-title,
+.content__container-sub-title {
+    margin: 1rem 0;
+    font-weight: 400;
+    letter-spacing: 0.6rem; 
+}
+
+.content__container-sub-desc {
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.content__container-desc,
+.content__container-sub-desc {
+    margin: 1.5rem 0;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+
+/* Our Menu */
+.content__menu-text {
+    padding:1.2rem 4.2rem;
+}
+
+.content__menu-title {
+    font-size: 3.6rem;
+    text-align: center;
+}
+
+.content__menu-desc {
+    margin: 1.5rem 0;
+}
+
+.content__menu-title,
+.content__menu-sub-title {
+    font-weight: 400;
+    letter-spacing: 0.6rem;
+    margin: 1rem 0;
+}
+
+.content__menu-sub-title {
+    font-size: 2rem;
+}
+
+.content__menu-time {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.content__menu-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contact */
+.contact__container {
+    padding: 8.4rem 1.6rem;
+    width: 100%;
+}
+
+.contact__container-title {
+    font-size: 3.6rem;
+    font-weight: 400;
+    letter-spacing: 0.4rem;
+}
+
+.contact__container-desc,
+.contact__container-phone-email {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.contact__container-address {
+    font-size: 1.8rem;
+    margin: 1.8rem 0;
+    color: #607d8b;
+    font-weight: 600;
+}
+
+.contact__container-form p {
+    margin: 1.5rem 0;
+}
+
+.contact__container-input {
+    border: none;
+    padding: 1.6rem 0;
+    border-bottom: 1px solid var(--gray-color);
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.contact__container-btn {
+    padding: 1.1rem 3.2rem;
+    margin: 1.5rem 0;
+    border: none;
+    font-size: 1.8rem;
+}
+
+.contact__container-btn:hover {
+    background-color: var(--gray-color);
+}
+
+
+/* footer */
+.footer__container {
+    background-color: var(--gray-color);
+    height: 12rem;
+    position: relative;
+}
+
+.footer__container p {
+    font-size: 1.8rem;
+    line-height: 12rem;
+    text-align: center;
+}
+
+.footer__container-link {
+    margin-left: 0.6rem;
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+.footer__top-page {
+    position: absolute;
+    right: 5%;
+    top: 37%;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .content__container-sub-desc {
+        display: none;
+    }
+
+    .grid .wide {
+        max-width: 100%;
+    }   
+
+    .wide {
+        width: auto;
+    }
+
+    .pd12-24 {
+        padding: 12px 24px;
+    }
+
+    .content__menu-img {
+        width: 100%;
+        opacity: 0.8;
+        border-radius: 3px;
+    }
+}
+
+@media (max-width: 46.25em) {
+    .header__container-list {
+        display: none;
+    }
+}
