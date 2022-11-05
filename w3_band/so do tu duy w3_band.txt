@@ -1,0 +1,8 @@
+1.header
+2.slider
+3.content
+  -about
+  -tour
+  -contact
+  -image
+4.footer
