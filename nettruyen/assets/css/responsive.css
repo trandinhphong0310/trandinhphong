@@ -1,0 +1,132 @@
+/* tablet and mobile */
+@media (max-width: 63.9375em) {
+    .hide-on-tablet-mobile {
+        display: none;
+    }
+}
+
+/* tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .wide,
+    .navlist,
+    .Module {
+        width: 100%;
+    }
+    .header {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .header__content {
+        border: 1px solid transparent;
+        margin-left: 5px;
+    }
+
+    .header__input {
+        padding: 0px 15px;
+    }
+
+    .header__input input {
+        width: 295px;
+    }
+
+    .header__logo {
+        width: 150px;
+    }
+
+    .toggle-dark {
+        margin-left: 8px;
+    }
+
+    nav.sticky {
+        display: none;
+    }
+
+    .navbar__list>li:nth-child(8), 
+    .navbar__list>li:nth-child(9), 
+    .navbar__list>li:nth-child(11), 
+    .navbar__list>li:last-child {
+        display: none;
+    }
+
+    .fb-page {
+        overflow: hidden;
+    }
+    
+    .footer .link-footer h4 {
+        margin: unset;
+    }
+}
+
+/* mobile */
+@media (max-width: 46.1875em) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .header__logo {
+        width: 135px;
+    }
+
+    .container__info {
+        margin-top: unset;
+        display: flex;
+        line-height: unset;
+    }
+
+    .nopd015 {
+        padding: unset;
+    }
+
+    .vpn {
+        padding: 10px;
+    }
+
+    .info i {
+        padding: 10px 0;
+    }
+
+    .module__item .item {
+        width: 50%;
+    }   
+
+    .new-comments .scroll-y::-webkit-scrollbar {
+        display: none;
+    }
+
+    .copyright {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .copyright::after {
+        content: "";
+        display: block;
+        border-bottom: 1px solid #ddd;
+        margin: 20px 0 0;
+    }
+
+    .header__notifications {
+        padding: 0 0 0 20px;
+    }
+    
+    .toggle-dark {
+        display: block;
+        margin-left: 28px;
+    }
+
+    .header__mobile-label {
+        display: block;
+    }
+
+    .navbar-collapse-user {
+        -webkit-tap-highlight-color: transparent;
+    }  
+    
+    .header__message-title {
+        padding: unset;
+    }
+
+    .header__notifications:hover .header__message {
+        display: none;
+    }
+}
