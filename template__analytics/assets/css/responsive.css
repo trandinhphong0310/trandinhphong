@@ -1,0 +1,67 @@
+/* mobile and tablet */
+@media (max-width: 63.9375em) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    
+    .content__title {
+        padding: 22px 16.5px 0;
+    }
+
+    .content__info {
+        padding: 0 16px;
+    }
+    
+    .content__feed-minute {
+        margin-right: 0;
+    }
+
+    .navbar__label {
+        display: block;
+    }
+    
+    .navbar {
+        display: none;
+    }
+}
+
+/* tablet */
+@media  (min-width: 46.25em) and (max-width: 63.9375em) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .content__feed-icon {
+        width: 73px;
+    }
+    
+    .content__feed-title {
+        margin-left: 0;
+    }
+}
+
+/* mobile */
+@media (max-width: 46.1875em) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .content__recent-introduce {
+        padding: 0 16px;
+    }
+    
+    .content__feed-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content__feed-icon {
+        display: inline-block;
+        margin-right: 4px;
+    }
+
+    .content__feed-title {
+        margin-left: 20px;
+    }
+}

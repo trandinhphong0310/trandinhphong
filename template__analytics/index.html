@@ -11,29 +11,37 @@
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 <body>
     <div class="main">
         <div class="header">
-            <span class="header__title">Logo</span>
+            <div class="header__title">Logo</div>
         </div>
 
-        <div class="grid">
-            <div class="container">
-                <div class="row no-gutters">
-                    <div class="col l-2">
+        <div class="container">
+            <div class="grid">
+                <div class="row mg-0">
+                    <div class="col l-2 pd-0 pr-8">
                         <!-- Begin: navbar -->
-                        <div class="navbar">
+                        <label for="navbar__check" class="navbar__label">
+                            <i class="fa-solid fa-list"></i>
+                            <span class="navbar__menu">Menu</span>
+                        </label>
+                        
+                        <input type="checkbox" class="navbar__input" id="navbar__check">
+
+                        <div class="navbar navbar__open">
                             <div class="navbar__info">
                                 <div class="navbar__info-img">
-                                    <img src="./assets/img/avatar2.png" alt="avatar" class="">
+                                    <img src="../template__analytics/assets/img/avatar3.jpg" alt="avatar" class="" style="display: inline-block;">
                                 </div>
                                     
                                 <div class="navbar__info-introduce">
                                     <h1 class="navbar__info-title">Welcome,
-                                        <span>Mike</span>
+                                        <div style="display: inline-block; font-weight: 600;">Mike</div>
                                     </h1>
                                     <div class="navbar__info-icons">
                                         <i class="fa-solid fa-envelope"></i>
@@ -61,21 +69,266 @@
                                 </ul>
                             </div>
                         </div>
+                        <div class="navbar__overlay"></div>
                         <!-- End: navbar -->
                     </div>
             
-                    <div class="col l-10">
+                    <div class="col l-10 m-12 pd-0 pl-8">
                         <div class="content">
                             <div class="content__title">
                                 <h1><i class="fa fa-dashboard"></i> My Dashboard</h1>
                             </div>
                             <div class="content__info">
-                                <div class="content__mess">
-                                    <i class="fa fa-comment w3-xxxlarge"></i>
-                                    <h3>52</h3>
-                                    <h4>Messages</h4>
+                               <div class="grid">
+                                    <div class="row">
+                                        <div class="col l-3 m-3 c-12">
+                                            <div class="content__mess">
+                                                <i class="content__mess-icon fa-solid fa-comment"></i>
+                                                <h3 class="content__mess-number">52</h3>
+                                                <h4 class="content__mess-name">Messages</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col l-3 m-3 c-12">
+                                            <div class="content__view">
+                                                <i class="content__mess-icon fa-regular fa-eye"></i>
+                                                <h3 class="content__mess-number">99</h3>
+                                                <h4 class="content__mess-name">Views</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col l-3 m-3 c-12">
+                                            <div class="content__share">
+                                                <i class="content__mess-icon fa-solid fa-share-nodes"></i>
+                                                <h3 class="content__mess-number">23</h3>
+                                                <h4 class="content__mess-name">Shares</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col l-3 m-3 c-12">
+                                            <div class="content__user">
+                                                <i class="content__mess-icon fa-solid fa-users"></i>
+                                                <h3 class="content__mess-number">50</h3>
+                                                <h4 class="content__mess-name">Users</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-top: 16px;">
+                                        <div class="col l-4 m-4 c-12">
+                                            <div class="content__heading">
+                                                <h2 class="content__container-title">Regions</h2>
+                                            </div>
+                                            <div class="content__region">
+                                                <img src="../template__analytics/assets/img/region.jpg" alt="" class="content__region-img">
+                                            </div>
+                                        </div>
+                                        <div class="col l-8 m-8 c-12">
+                                            <div class="content__heading">
+                                                <h2 class="content__container-title">Feeds</h2>
+                                            </div>
+                                            <div class="content__feed">
+                                                <div class="content__feed-info" style="background-color: #fff; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);">
+                                                    <div class="" style="display: inline-block;">
+                                                        <i class="content__feed-icon content__feed-icon--blue fa-solid fa-user"></i>
+                                                    </div>
+                                                    <div class="content__feed-title">New record, over 90 views.</div>
+                                                    <div class="content__feed-minute">10 mins</div>
+                                                </div>
+                                                <div class="content__feed-info">
+                                                    <div class="" style="display: inline-block;">
+                                                        <i class="content__feed-icon content__feed-icon--red fa-solid fa-bell"></i>
+                                                    </div>
+                                                    <div class="content__feed-title">Database error.</div>
+                                                    <div class="content__feed-minute">15 mins</div>
+                                                </div>
+                                                <div class="content__feed-info" style="background-color: #fff; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);">
+                                                    <div class="" style="display: inline-block;">
+                                                        <i class="content__feed-icon content__feed-icon--yellow fa-solid fa-users"></i>
+                                                    </div>
+                                                    <div class="content__feed-title">New record, over 40 views.</div>
+                                                    <div class="content__feed-minute">17 mins</div>
+                                                </div>
+                                                <div class="content__feed-info">
+                                                    <div class="" style="display: inline-block;">
+                                                        <i class="content__feed-icon content__feed-icon--red fa-solid fa-comment"></i>
+                                                    </div>
+                                                    <div class="content__feed-title">New comments.</div>
+                                                    <div class="content__feed-minute">25 mins</div>
+                                                </div>
+                                                <div class="content__feed-info" style="background-color: #fff; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);">
+                                                    <div class="" style="display: inline-block;">
+                                                        <i class="content__feed-icon content__feed-icon--blue fa-solid fa-bookmark"></i>
+                                                    </div>
+                                                    <div class="content__feed-title">Check transactions.</div>
+                                                    <div class="content__feed-minute">28 mins</div>
+                                                </div>
+                                                <div class="content__feed-info">
+                                                    <div class="" style="display: inline-block;">
+                                                        <i class="content__feed-icon content__feed-icon--red fa-solid fa-laptop"></i>
+                                                    </div>
+                                                    <div class="content__feed-title">CPU overload.</div>
+                                                    <div class="content__feed-minute">35 mins</div>
+                                                </div>
+                                                <div class="content__feed-info" style="background-color: #fff; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);">
+                                                    <div class="" style="display: inline-block;">
+                                                        <i class="content__feed-icon content__feed-icon--green fa-solid fa-share-nodes"></i>
+                                                    </div>
+                                                    <div class="content__feed-title">New shares.</div>
+                                                    <div class="content__feed-minute">39 mins</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hr"></div>
+                                    <div class="content__general">
+                                        <h3 class="content__container-title">General Stats</h3>
+                                        <div class="content__new content__new-visitor">
+                                            <h4>New Visitors</h4>
+                                            <div class="row no-gutters" style="line-height: 39px;">
+                                                <div class="col l-3 c-3" style="font-size: 1.5rem; background-color: #4caf50; color: var(--white-color); text-align: center;">+25%</div>
+                                                <div class="col l-9 c-9" style="background-color: #9e9e9e;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="content__new content__new-users">
+                                            <h4>New Users</h4>
+                                            <div class="row no-gutters" style="line-height: 39px;">
+                                                <div class="col l-6 c-6" style="font-size: 1.5rem; background-color: var(--yellow-color); text-align: center;">50%</div>
+                                                <div class="col l-6 c-6" style="background-color: #9e9e9e;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="content__new content__bounce-rate">
+                                            <h4>Bounce Rate</h4>
+                                            <div class="row no-gutters" style="line-height: 39px;">
+                                                <div class="col l-9 c-9" style="font-size: 1.5rem; background-color: var(--red-color); color: var(--white-color); text-align: center;">75%</div>
+                                                <div class="col l-3 c-3" style="background-color: #9e9e9e;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hr"></div>
+                                    <div class="content__country">
+                                        <h2 class="content__container-title">Countries</h2>
+                                        <ul class="content__country-list">
+                                            <li class="row no-gutters content__country-item" style="background-color: #fff">
+                                                <span class="col l-8 c-8 content__country-name">United States</span>
+                                                <span class="col l-4 c-4 content__country-percent">65%</span>
+                                            </li>
+                                            <li class="row no-gutters content__country-item">
+                                                <span class="col l-8 c-8 content__country-name">UK</span>
+                                                <span class="col l-4 c-4 content__country-percent">15.7%</span>
+                                            </li>
+                                            <li class="row no-gutters content__country-item" style="background-color: #fff">
+                                                <span class="col l-8 c-8 content__country-name">Russia</span>
+                                                <span class="col l-4 c-4 content__country-percent">5.6%</span>
+                                            </li>
+                                            <li class="row no-gutters content__country-item">
+                                                <span class="col l-8 c-8 content__country-name">Spain</span>
+                                                <span class="col l-4 c-4 content__country-percent">2.1%</span>
+                                            </li>
+                                            <li class="row no-gutters content__country-item" style="background-color: #fff">
+                                                <span class="col l-8 c-8 content__country-name">India</span>
+                                                <span class="col l-4 c-4 content__country-percent">1.9%</span>
+                                            </li>
+                                            <li class="row no-gutters content__country-item">
+                                                <span class="col l-8 c-8 content__country-name">France</span>
+                                                <span class="col l-4 c-4 content__country-percent">1.5%</span>
+                                            </li>
+                                        </ul> <br>
+                                        <button class="content__more-country">
+                                            More Countries <i class="fa-solid fa-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                    <div class="hr"></div>
+                                    <div class="content__recent-user">
+                                        <h4 class="content__container-title">Recent Users</h4>
+                                        <ul class="content__member-list">
+                                            <li class="content__member-item">
+                                                <img src="../template__analytics/assets/img/avatar3.jpg" alt="" class="content__member-img">
+                                                <span class="content__member-name">Mike</span>
+                                            </li>
+                                            <li class="content__member-item">
+                                                <img src="../template__analytics/assets/img/avatar3.jpg" alt="" class="content__member-img">
+                                                <span class="content__member-name">Jill</span>
+                                            </li>
+                                            <li class="content__member-item">
+                                                <img src="../template__analytics/assets/img/avatar3.jpg" alt="" class="content__member-img">
+                                                <span class="content__member-name">Jane</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="hr"></div>
+                                    <div class="content__recent-cmt">
+                                        <h4 class="content__container-title">Recent Comments</h4>
+                                        <div class="row content__recent-info">
+                                            <div class="col l-2 m-2">
+                                                <img src="../template__analytics/assets/img/avatar4.png" alt="" class="content__recent-img">
+                                            </div>
+                                            <div class="col l-10 m-10 content__recent-introduce">
+                                                <div class="content__recent-title">
+                                                    <span class="content__recent-title-name">John</span>
+                                                    <span class="content__recent-title-calendar">Sep 29, 2014,</span>
+                                                    <span class="content__recent-title-time">9:12 PM</span>
+                                                </div>
+                                                <div class="content__recent-desc">
+                                                    <span class="content__recent-mess">Keep up the GREAT work! 
+                                                        I am cheering for you!! Lorem ipsum dolor sit amet, 
+                                                        consectetur adipiscing elit, sed do eiusmod tempor 
+                                                        incididunt ut labore et dolore magna aliqua.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row content__recent-info">
+                                            <div class="col l-2 m-2">
+                                                <img src="../template__analytics/assets/img/avatar5.png" alt="" class="content__recent-img">
+                                            </div>
+                                            <div class="col l-10 m-10 content__recent-introduce">
+                                                <div class="content__recent-title">
+                                                    <span class="content__recent-title-name">John</span>
+                                                    <span class="content__recent-title-calendar">Sep 29, 2014,</span>
+                                                    <span class="content__recent-title-time">9:12 PM</span>
+                                                </div>
+                                                <div class="content__recent-desc">
+                                                    <span class="content__recent-mess">Keep up the GREAT work! 
+                                                        I am cheering for you!! Lorem ipsum dolor sit amet, 
+                                                        consectetur adipiscing elit, sed do eiusmod tempor 
+                                                        incididunt ut labore et dolore magna aliqua.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </br>
+                                    <div class="content__end">
+                                        <div class="row">
+                                            <div class="col l-4 m-4 c-12">
+                                                <div class="content__end-title content__end-title--green">Demographic</div>
+                                                <ul class="content__end-list">
+                                                    <li class="content__end-item"><span>Language</span></li>
+                                                    <li class="content__end-item"><span>Country</span></li>
+                                                    <li class="content__end-item"><span>City</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col l-4 m-4 c-12">
+                                                <div class="content__end-title content__end-title--red">System</div>
+                                                <ul class="content__end-list">
+                                                    <li class="content__end-item"><span>Browser</span></li>
+                                                    <li class="content__end-item"><span>OS</span></li>
+                                                    <li class="content__end-item"><span>More</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col l-4 m-4 c-12">
+                                                <div class="content__end-title content__end-title--yellow">Target</div>
+                                                <ul class="content__end-list">
+                                                    <li class="content__end-item"><span>Users</span></li>
+                                                    <li class="content__end-item"><span>Active</span></li>
+                                                    <li class="content__end-item"><span>Geo</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="footer">
+                            <h2 class="footer__heading">FOOTER</h2>
+                            <div class="footer__name">Powered by<a href="" class="footer__link">w3.css</a></d>
                         </div>
                     </div>
                 </div>
