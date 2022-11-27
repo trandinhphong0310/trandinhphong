@@ -294,3 +294,57 @@ console.log(student.firstName);  // 'Long'
 console.log(student.lastName);  // 'Bui'
 console.log(student.getFullName());  // 'Long Bui'
 
+
+
+var student = 'javascript';
+
+for (var key in student) {
+    console.log(student[key]);
+}
+
+function run(object) {
+    var arr = [];
+
+    for (var key in object) {
+        arr.push(`Thuộc tính ${key} có giá trị ${object[key]}`);
+    }
+    return arr;
+}
+
+// Expected results:
+console.log(run({ name: 'Nguyen Van A', age: 16, address: 'VietNam'}));
+// Output:
+// [
+//     "Thuộc tính name có giá trị Nguyen Van A",
+//     "Thuộc tính age có giá trị 16"
+// ]
+
+var languages = ['java', 'php', 'ruby'];
+
+for (var key of Object.values(languages)) {
+    console.log(key);
+}
+
+var isSuccess = false;
+var i = 0;
+
+do {
+    i++;
+    
+    console.log('Nap the lan' + i);
+
+    if (false) {
+        isSuccess = true;
+    }
+
+} while (!isSuccess && i <= 3);
+
+function giaiThua(number) {
+    var output = 1;
+    for (number > 0; i--) {
+        output = output * i;
+    }
+    return output;
+}
+
+console.log(giaiThua(6));
