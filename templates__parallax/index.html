@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="../templates__parallax/assets/css/grid.css">
+    <link rel="stylesheet" href="../templates__parallax/assets/reset css/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap">
+    <link rel="stylesheet" href="../templates__parallax/assets/fonts/fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" href="../templates__parallax/assets/css/base.css">
+    <link rel="stylesheet" href="../templates__parallax/assets/css/responsive.css">
+    <link rel="stylesheet" href="../templates__parallax/assets/css/main.css">
+    <link rel="icon" type="image/x-icon" href="../templates__parallax/assets/img/parallax1.jpg">
+</head>
+<body class="dark-theme" style="background-color: transparent;">
+    <div class="animated yt-loader"></div>
+    <button class="btn-toggle"><i class="fa-solid fa-lightbulb"></i></button>
+    <script>
+        const btn = document.querySelector('.btn-toggle');
+            // Lắng nghe sự kiện click vào button
+            btn.addEventListener('click', function() {
+              // Thêm hoặc xóa class dark-theme ở body
+            document.body.classList.toggle('dark-theme');  
+        })
+    </script>       
+    <div class="app">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">HOME</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link"><i class="navbar__icon fa-solid fa-user"></i>ABOUT</a></li>
+                <li class="nav__item"><a href="#portfolio" class="nav__link"><i class="navbar__icon fa-solid fa-th"></i>PORTFOLIO</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link"><i class="navbar__icon fa-sharp fa-solid fa-envelope"></i>CONTACT</a></li>
+            </ul>
+            <input type="checkbox" name="" id="sidebar__checkbox" style="display: none;">
+            <label for="sidebar__checkbox" class="navbar__search navbar__checkbox">
+                <i class="navbar__icon-search show-on-mobile fa-solid fa-bars" style="display: none;"></i>
+                <i class="navbar__icon-search hide-on-mobile fa-solid fa-magnifying-glass"></i>
+            </label>
+            <ul class="nav__list-mobile">
+                <li class="nav__item-mobile"><a href="#" class="nav__link-mobile">SEARCH</a></li>
+                <li class="nav__item-mobile"><a href="#about" class="nav__link-mobile">ABOUT</a></li>
+                <li class="nav__item-mobile"><a href="#portfolio" class="nav__link-mobile">PORTFOLIO</a></li>
+                <li class="nav__item-mobile"><a href="#contact" class="nav__link-mobile">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <script type="text/javascript">
+            window.addEventListener("scroll", function() {
+                var nav = document.querySelector("nav");
+                nav.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+
+        <div class="header">
+            <div class="header__title"><h1 class="header__title-message">MY <b>WEBSITE</b> LOGO</h1></div>
+        </div>
+
+        <div class="container">
+            <div class="grid wide container__about" id="about">
+                <div class="container__header">
+                    <h1 class="container__title">ABOUT ME</h1>
+                    <p class="container__desc">I love photography</p>
+                </div>
+                <p class="container__text">We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="row no-gutters container__info">
+                    <div class="col l-6 m-6 c-12" style="padding: 12px 24px;">
+                        <p class="container__info-name">                            
+                            <strong><i class="fa-solid fa-user"></i>My Name</strong>
+                        </p><br>
+                        <img src="../templates__parallax/assets/img/avatar_hat.jpg" alt="" class="container__info-img">
+                    </div>
+                    <div class="col l-6 m-6 c-0" style="padding: 12px 24px;">
+                        <p class="container__sub-text">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="container__skill">
+                    <p class="container__skill-title">Im really good at:</p>
+                    <form action="" class="container__skill-form">
+                        <p class="container__skill-form-title"><i class="fa-solid fa-camera"></i>Photography</p>
+                        <div class="row no-gutters" style="height: 35px;">
+                            <div class="col l-11 m-11 c-11" style="background-color: var(--background-color-primary); font-size: 1.5rem;"><p style="line-height: 35px; text-align: center; color: var(--white-color);">90%</p></div>
+                            <div class="col l-1 m-1 c-1" style="background-color: var(--background-color-secondary);"></div>
+                        </div>
+                        <p class="container__skill-form-title"><i class="fa-solid fa-laptop"></i>Web Design</p>
+                        <div class="row no-gutters" style="height: 35px;">
+                            <div class="col l-10 m-10 c-10" style="background-color: var(--background-color-primary); font-size: 1.5rem;"><p style="line-height: 35px; text-align: center; color: var(--white-color);">85%</p></div>
+                            <div class="col l-2 m-2 c-2" style="background-color: var(--background-color-secondary);"></div>
+                        </div>
+                        <p class="container__skill-form-title"><i class="fa-regular fa-image"></i>Photoshop</p>
+                        <div class="row no-gutters" style="height: 35px;">
+                            <div class="col l-9 m-9 c-9" style="background-color: var(--background-color-primary); font-size: 1.5rem;"><p style="line-height: 35px; text-align: center; color: var(--white-color);">75%</p></div>
+                            <div class="col l-3 m-3 c-3" style="background-color: var(--background-color-secondary);"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="container__list">
+                <div class="row no-gutters">
+                    <div class="col l-3 m-3 c-12" style="margin: 16px 0; text-align: center; color: var(--white-color);"><p style="font-size: 2.4rem;">14+</p><b style="font-size: 1.5rem; font-weight: 400;">Partners</b></div>
+                    <div class="col l-3 m-3 c-12" style="margin: 16px 0; text-align: center; color: var(--white-color);"><p style="font-size: 2.4rem;">55+</p><b style="font-size: 1.5rem; font-weight: 400;">Projects Done</b></div>
+                    <div class="col l-3 m-3 c-12" style="margin: 16px 0; text-align: center; color: var(--white-color);"><p style="font-size: 2.4rem;">89+</p><b style="font-size: 1.5rem; font-weight: 400;">Happy Clients</b></div>
+                    <div class="col l-3 m-3 c-12" style="margin: 16px 0; text-align: center; color: var(--white-color);"><p style="font-size: 2.4rem;">150+</p><b style="font-size: 1.5rem; font-weight: 400;">Meetings</b></div>
+                </div>
+            </div>
+
+            <div class="container__space container__space-portfolio" id="portfolio">
+                <h3>PORTFOLIO</h3>
+            </div>
+
+            <div class="grid wide container__work" id="work">
+                <div class="container__header">
+                    <h1 class="container__title">MY WORK</h1>
+                    <p class="container__desc">Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</p><br>
+                    <div class="row">
+                        <div class="col l-3 m-3 c-12 open" style="position: relative;">
+                            <img src="../templates__parallax/assets/img/p1.jpg" alt="The mist over the mountains" class="container__work-img">
+                            <p class="container__work-img-title">The mist over the mountains</p>
+                        </div>
+                        <div class="col l-3 m-3 c-12 open" style="position: relative;">
+                            <img src="../templates__parallax/assets/img/p2.jpg" alt="Coffee beans" class="container__work-img">
+                            <p class="container__work-img-title">Coffee beans</p>
+                        </div>
+                        <div class="col l-3 m-3 c-12 open" style="position: relative;">
+                            <img src="../templates__parallax/assets/img/p3.jpg" alt="Bear closeup" class="container__work-img">
+                            <p class="container__work-img-title">Bear closeup</p>
+                        </div>
+                        <div class="col l-3 m-3 c-12 open" style="position: relative;">
+                            <img src="../templates__parallax/assets/img/p4.jpg" alt="Quiet ocean" class="container__work-img">
+                            <p class="container__work-img-title">Quiet ocean</p>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 16px">
+                        <div class="col l-3 m-3 c-12 open" style="position: relative;">
+                            <img src="../templates__parallax/assets/img/p5.jpg" alt="The mist" class="container__work-img">
+                            <p class="container__work-img-title">The mist</p>
+                        </div>
+                        <div class="col l-3 m-3 c-12 open" style="position: relative;">
+                            <img src="../templates__parallax/assets/img/p6.jpg" alt="My beloved typewriter" class="container__work-img">
+                            <p class="container__work-img-title">My beloved typewriter</p>
+                        </div>
+                        <div class="col l-3 m-3 c-12 open" style="position: relative;">
+                            <img src="../templates__parallax/assets/img/p7.jpg" alt="Empty ghost train" class="container__work-img">
+                            <p class="container__work-img-title">Empty ghost train</p>
+                        </div>
+                        <div class="col l-3 m-3 c-12 open" style="position: relative;">
+                            <img src="../templates__parallax/assets/img/p8.jpg" alt="Sailing" class="container__work-img">
+                            <p class="container__work-img-title">Sailing</p>
+                        </div>
+                    </div>
+                    <a href="#work" class="container__work-footer btn btn-1 color-green">
+                        <svg>
+                            <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                        </svg>
+                        LOAD MORE
+                    </a>
+                </div>
+            </div>
+
+            <div class="container__space container__space-contact" id="contact">
+                <h3>CONTACT</h3>
+            </div>
+
+            <div class="grid wide container__address">
+                <div class="container__header">
+                    <h1 class="container__title">WHERE I WORK</h1>
+                    <p class="container__desc">I'd love your feedback!</p>
+                </div>
+                <div class="row">
+                    <div class="col l-4 m-4 c-12">
+                        <img width="100%" src="../templates__parallax/assets/img/map.jpg" alt="" class="container__address-img">
+                    </div>
+                    <div class="col l-8 m-8 c-12">
+                        <div class="container__address-form">
+                            <div class="" style="margin-bottom: 15px">
+                                <div class="container__address-contact"><i style="margin-right: 16px;" class="fa-sharp fa-solid fa-location-dot"></i>Chicago, US</div>
+                                <div class="container__address-contact"><i style="margin-right: 16px;" class="fa-solid fa-phone"></i>Phone<a href="tel: +00 151515"> +00 151515</a></div>
+                                <div class="container__address-contact"><i style="margin-right: 16px;" class="fa-solid fa-envelope"></i>Email:<a href="email:mail@mail.com"> mail@mail.com</a></div>
+                            </div>
+                            <form action="" class="">
+                                <p class="form__title">Swing by for a cup of<i class="fa-solid fa-coffee"></i>, or leave me a note:</p>
+                                <div class="row" style="margin-bottom: 10px;">
+                                    <div class="col l-6 m-6 c-6">
+                                        <input style="height: 45px; border: none; outline: none; border: 1px solid #ccc; font-size: 1.5rem; padding: 8px; width: 100%;" required type="text" name="" id="" placeholder="Name">
+                                    </div>
+                                    <div class="col l-6 m-6 c-6">
+                                        <input style="height: 45px; border: none; outline: none; border: 1px solid #ccc; font-size: 1.5rem; padding: 8px; width: 100%;" required type="email" name="" id="" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col l-12 m-12 c-12">
+                                        <input  style="height: 45px; border: none; outline: none; border: 1px solid #ccc; font-size: 1.5rem; padding: 8px; width: 100%;" required type="text" name="" id="" placeholder="Message">
+                                    </div>
+                                </div>
+                                <a class="send__message btn btn-1 color-green" style="font-size: 1.5rem;">
+                                    <svg>
+                                        <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                                    </svg>
+                                    <i class="fa fa-paper-plane" style="margin: 0 8px;"></i>SEND MESSAGE
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <a href="#" class="footer-btn btn btn-1 color-green">
+                <svg>
+                    <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                </svg>
+                <i class="fa-solid fa-arrow-up" style="margin-right: 8px;"></i>To the top
+            </a>
+            <div class="" style="margin: 16px 0;">
+                <i class="fa-brands fa-facebook footer-icon"></i>
+                <i class="fa-brands fa-instagram footer-icon"></i>
+                <i class="fa-brands fa-snapchat footer-icon"></i>
+                <i class="fa-brands fa-pinterest-p footer-icon"></i>
+                <i class="fa-brands fa-twitter footer-icon"></i>
+                <i class="fa-brands fa-linkedin footer-icon"></i>
+            </div>
+            <p style="color: var(--white-color); font-size: 1.5rem;">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="" style="color: var(--white-color); text-decoration: underline;">w3.css</a></p>
+        </div>
+    </div>
+</body>
+</html>
